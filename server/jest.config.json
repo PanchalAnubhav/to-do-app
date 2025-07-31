@@ -1,0 +1,23 @@
+{
+  "testEnvironment": "node",
+  "setupFilesAfterEnv": ["<rootDir>/src/tests/setup.js"],
+  "collectCoverageFrom": [
+    "src/**/*.js",
+    "!src/index.js",
+    "!src/tests/**",
+    "!src/config/**"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 70,
+      "functions": 70,
+      "lines": 70,
+      "statements": 70
+    }
+  },
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.js",
+    "<rootDir>/src/**/*.{test,spec}.js"
+  ],
+  "verbose": true
+}
